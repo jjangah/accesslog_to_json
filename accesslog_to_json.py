@@ -17,7 +17,7 @@ while 1:
 	m = re.search( r'(.*) -(.*)- \[(.*)\] \"(.*)\" (.*) (.*) \"(.*)\" \"(.*)\" (.*) (.*) .', line)
 
 	dic={}
-	# set eacj access.log attribute and value
+	# set access.log attribute and value
 	dic['remote_addr'] = m.group(1)
 	dic['remote_user'] = m.group(2)
 	dic['time_local'] = m.group(3)
